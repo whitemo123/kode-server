@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: kode-server
+  profiles:
+    # 配置的环境: dev|test|prod
+    active: ${ACTIVE:dev}
+  servlet:
+    multipart:
+      max-file-size: 10240MB
+      max-request-size: 10240MB

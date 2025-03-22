@@ -26,6 +26,11 @@
             <groupId>org.kode</groupId>
             <artifactId>service</artifactId>
         </dependency>
+        <!-- knife4j -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
