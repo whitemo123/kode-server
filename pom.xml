@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.4.4</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>common</module>
+		<module>api</module>
+		<module>service</module>
+		<module>dao</module>
+		<module>web</module>
+	</modules>
+
+	<groupId>org.kode</groupId>
+	<artifactId>kode</artifactId>
+	<version>0.0.1</version>
+	<name>kode-server</name>
+	<description>kode-server</description>
+
+	<properties>
+		<java.version>17</java.version>
+		<kode.version>0.0.1</kode.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.kode</groupId>
+				<version>${kode.version}</version>
+				<artifactId>common</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.kode</groupId>
+				<artifactId>api</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.kode</groupId>
+				<artifactId>service</artifactId>
+				<version>${kode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.kode</groupId>
+				<artifactId>dao</artifactId>
+				<version>${kode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.kode</groupId>
+				<artifactId>web</artifactId>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+<!--	<dependencies>-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter</artifactId>-->
+<!--		</dependency>-->
+<!--	</dependencies>-->
+
+<!--	<build>-->
+<!--		<plugins>-->
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--		</plugins>-->
+<!--	</build>-->
+
+</project>
